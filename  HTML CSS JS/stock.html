@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Overview</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="dashboard">
+      <header class="dash-header">
+        <div>
+          <h1 class="dash-title">Stock Overview</h1>
+          <p class="dash-subtitle">Deep-dive into a single investment idea.</p>
+        </div>
+        <a href="investing.html" class="secondary-btn">← Back to Investing</a>
+      </header>
+
+      <section id="stock-detail" class="stock-detail">
+        <h2 id="stock-detail-name" class="stock-name"></h2>
+        <p id="stock-detail-tagline" class="stock-tagline"></p>
+
+        <div class="stock-meta-row">
+          <div class="stock-meta-card">
+            <h3>Market Capitalization</h3>
+            <p id="stock-detail-marketcap"></p>
+          </div>
+          <div class="stock-meta-card">
+            <h3>Match Accuracy</h3>
+            <p id="stock-detail-accuracy"></p>
+          </div>
+        </div>
+
+        <div class="stock-section">
+          <h3>Market Analysis Snapshot</h3>
+          <p id="stock-detail-analysis"></p>
+        </div>
+
+        <div class="stock-section">
+          <h3>Why You Could Invest</h3>
+          <p id="stock-detail-why"></p>
+        </div>
+
+        <p id="stock-detail-note" class="stock-note">
+          This is an educational example, not real-time investment advice.
+        </p>
+
+        <div class="stock-actions">
+          <button id="stock-accept-btn" class="primary-btn">Accept & Continue</button>
+        </div>
+      </section>
+    </section>
+
+    <script src="inde.js"></script>
+  </body>
+</html>

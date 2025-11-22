@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="dashboard">
+      <header class="dash-header">
+        <div>
+          <h1 class="dash-title">Order Confirmation</h1>
+          <p class="dash-subtitle">Final summary of your stock purchase.</p>
+        </div>
+        <a href="investing.html" class="secondary-btn">← Back to Investing</a>
+      </header>
+
+      <section id="confirm-section" class="stock-detail">
+        <h2 id="confirm-stock-name" class="stock-name"></h2>
+        <p id="confirm-tagline" class="stock-tagline"></p>
+
+        <div class="stock-meta-row">
+          <div class="stock-meta-card">
+            <h3>Account Balance (Budget)</h3>
+            <p id="confirm-balance"></p>
+          </div>
+          <div class="stock-meta-card">
+            <h3>Total Order Value</h3>
+            <p id="confirm-total"></p>
+          </div>
+        </div>
+
+        <div class="stock-section">
+          <h3>Order Details</h3>
+          <p id="confirm-order-details"></p>
+        </div>
+
+        <p class="stock-note">
+          This is a demo confirmation screen only. No real trade is being placed.
+        </p>
+      </section>
+    </section>
+
+    <script src="inde.js"></script>
+  </body>
+</html>

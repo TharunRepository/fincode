@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lending Details</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="dashboard">
+      <header class="dash-header">
+        <div>
+          <h1 class="dash-title">Money Lending</h1>
+          <p class="dash-subtitle">Review your lending amount and terms</p>
+        </div>
+      </header>
+
+      <main class="dash-grid">
+        <section class="dash-card">
+          <h2>Lending Amount</h2>
+          <p>
+            Selected lending amount:
+            <strong id="lend-amount-display"></strong>
+          </p>
+          <p>
+            You can extend this page with EMI schedules, interest rate, and tenure selection.
+          </p>
+
+          <button id="lend-confirm-btn" class="primary-btn" type="button">
+            Confirm Lending Order
+          </button>
+
+          <div id="lend-confirm-box" class="confirm-box hidden">
+            <h3>Order Confirmed</h3>
+            <p>Your lending order has been confirmed based on the selected amount.</p>
+          </div>
+        </section>
+      </main>
+    </section>
+    <script src="inde.js"></script>
+  </body>
+</html>

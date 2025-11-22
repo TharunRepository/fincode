@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investing Suggestions</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="dashboard">
+      <header class="dash-header">
+        <div>
+          <h1 class="dash-title">Investing Planner</h1>
+          <p class="dash-subtitle">Choose your style, set a budget, explore ideas.</p>
+        </div>
+        <a href="index.html" class="secondary-btn">← Back to Dashboard</a>
+      </header>
+
+      <section id="invest-flow" class="invest-flow">
+        <div class="invest-step">
+          <h3 class="step-title">1. Choose investment type</h3>
+          <div class="chip-row" id="invest-type-row">
+            <button class="chip-btn" data-type="stocks">Stocks</button>
+            <button class="chip-btn" data-type="mutual_funds">Mutual Funds</button>
+            <button class="chip-btn" data-type="gold">Gold</button>
+            <button class="chip-btn" data-type="bonds">Bonds</button>
+            <button class="chip-btn" data-type="sip">SIP Planner</button>
+          </div>
+        </div>
+
+        <div class="invest-step hidden" id="budget-step">
+          <h3 class="step-title">2. Select your monthly budget</h3>
+          <div class="chip-row" id="budget-row">
+            <button class="chip-btn" data-budget="0-10k">₹0 – ₹10k</button>
+            <button class="chip-btn" data-budget="10k-100k">₹10k – ₹100k</button>
+            <button class="chip-btn" data-budget="100k-10L">₹100k – ₹10L</button>
+            <button class="chip-btn" data-budget="10L+">₹10L+</button>
+          </div>
+        </div>
+
+        <div class="invest-step hidden" id="recommend-step">
+          <h3 class="step-title">3. Suggested ideas for you</h3>
+          <p class="recommend-subtitle" id="recommend-subtitle"></p>
+          <ul class="recommend-list" id="recommend-list"></ul>
+        </div>
+      </section>
+    </section>
+
+    <script src="inde.js"></script>
+  </body>
+</html>

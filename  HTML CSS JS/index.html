@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login / Signup</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="auth-wrapper">
+      <div class="auth-card">
+        <div class="auth-tabs">
+          <button id="login-tab" class="tab-button active" type="button">Login</button>
+          <button id="signup-tab" class="tab-button" type="button">Sign Up</button>
+        </div>
+
+        <div class="auth-forms">
+          <form id="login-form" class="auth-form" autocomplete="off">
+            <h2 class="form-title">Welcome back</h2>
+            <div class="form-group">
+              <label for="login-email">Email</label>
+              <input
+                type="email"
+                id="login-email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="login-password">Password</label>
+              <input
+                type="password"
+                id="login-password"
+                placeholder="••••••••"
+                required
+              />
+            </div>
+            <button type="submit" class="primary-btn">Login</button>
+          </form>
+
+          <form id="signup-form" class="auth-form hidden" autocomplete="off">
+            <h2 class="form-title">Create an account</h2>
+            <div class="form-group">
+              <label for="signup-name">Full name</label>
+              <input
+                type="text"
+                id="signup-name"
+                placeholder="Your name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="signup-email">Email</label>
+              <input
+                type="email"
+                id="signup-email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="signup-password">Password</label>
+              <input
+                type="password"
+                id="signup-password"
+                placeholder="At least 6 characters"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="signup-confirm">Confirm password</label>
+              <input
+                type="password"
+                id="signup-confirm"
+                placeholder="Repeat password"
+                required
+              />
+            </div>
+            <button type="submit" class="primary-btn">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <section id="kyc-section" class="kyc hidden">
+      <div class="kyc-card">
+        <h2 class="kyc-title">KYC Registration</h2>
+        <p class="kyc-subtitle">
+          Complete your details to finish setting up your account.
+        </p>
+        <p class="kyc-user-label">
+          Logged in as <span id="kyc-user-email"></span>
+        </p>
+        <form id="kyc-form" class="kyc-form" autocomplete="off">
+          <div class="form-group">
+            <label for="kyc-full-name">Full name</label>
+            <input
+              type="text"
+              id="kyc-full-name"
+              placeholder="Your legal name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="kyc-dob">Date of birth</label>
+            <input type="date" id="kyc-dob" required />
+          </div>
+          <div class="form-group">
+            <label for="kyc-address">Address</label>
+            <input
+              type="text"
+              id="kyc-address"
+              placeholder="Street, city, country"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="kyc-id-number">Govt. ID number</label>
+            <input
+              type="text"
+              id="kyc-id-number"
+              placeholder="Aadhar / PAN / Passport"
+              required
+            />
+          </div>
+          <button type="submit" class="primary-btn">Submit KYC</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="dashboard" class="dashboard hidden">
+      <header class="dash-header">
+        <div>
+          <h1 class="dash-title">WealthSphere</h1>
+          <p class="dash-subtitle">Invest • Grow • Lend with confidence</p>
+        </div>
+        <div class="dash-user-pill">
+          <span class="dash-user-label">User</span>
+          <span id="dash-user-email"></span>
+        </div>
+      </header>
+
+      <main class="dash-grid">
+        <section class="dash-card invest-card">
+          <h2>Investing</h2>
+          <p>Build long-term wealth with curated portfolios and smart insights.</p>
+          <ul class="dash-list">
+            <li>Blue-chip stocks & index funds</li>
+            <li>Goal-based investment plans</li>
+            <li>Live performance tracking</li>
+          </ul>
+          <a href="investing.html" class="secondary-btn">Start Investing</a>
+        </section>
+
+        <section class="dash-card lend-card">
+          <h2>Money Lending</h2>
+          <p>Earn attractive returns by lending to verified borrowers.</p>
+          <ul class="dash-list">
+            <li>Risk-graded lending opportunities</li>
+            <li>Auto-collect EMIs</li>
+            <li>Real-time portfolio health</li>
+          </ul>
+          <button id="lend-explore-btn" class="secondary-btn">Explore Lending</button>
+        </section>
+      </main>
+    </section>
+
+    <section id="lend-flow" class="dashboard-section hidden">
+      <div class="dash-card">
+        <h2>Set Your Lending Amount</h2>
+        <p>Tell us how much you want to lend to get started.</p>
+        <div class="form-group">
+          <label for="lend-amount">How much do you want to lend?</label>
+          <input
+            type="number"
+            id="lend-amount"
+            placeholder="Enter amount (e.g. 50000)"
+            min="0"
+          />
+        </div>
+        <p class="note-text">
+          Note: If you miss paying your due amount, your outstanding debt may
+          accrue additional interest and penalties. Always review the terms
+          and repayment schedule carefully before confirming any lending
+          agreement.
+        </p>
+      </div>
+    </section>
+
+    <script src="inde.js"></script>
+  </body>
+</html>

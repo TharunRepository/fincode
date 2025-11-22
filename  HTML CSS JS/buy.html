@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy Stock</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="dashboard">
+      <header class="dash-header">
+        <div>
+          <h1 class="dash-title">Buy Order</h1>
+          <p class="dash-subtitle">Review your balance and choose how many shares to buy.</p>
+        </div>
+        <a href="stock.html" class="secondary-btn">← Back to Stock</a>
+      </header>
+
+      <section id="buy-section" class="stock-detail">
+        <h2 id="buy-stock-name" class="stock-name"></h2>
+        <p id="buy-balance-text" class="stock-tagline"></p>
+
+        <form id="buy-form" class="buy-form" autocomplete="off">
+          <div class="form-group">
+            <label for="buy-price">Price per share (₹)</label>
+            <input type="number" id="buy-price" min="0" step="0.01" required />
+          </div>
+          <div class="form-group">
+            <label for="buy-shares">Number of shares to buy</label>
+            <input type="number" id="buy-shares" min="1" step="1" required />
+          </div>
+          <button type="submit" class="primary-btn">Review Order</button>
+        </form>
+      </section>
+    </section>
+
+    <script src="inde.js"></script>
+  </body>
+</html>
